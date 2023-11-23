@@ -1,0 +1,26 @@
+org 100
+load j
+store j
+
+loop, load j
+           subt five
+           skipcond 000
+           jump endloop
+           load j
+           subt three
+           skipcond 400
+           jump loops
+           jump endloop
+           output
+loops,      load j
+           output
+           add one
+           store j
+           jump loop
+endloop,   halt
+
+j, dec 0
+three, dec 3
+one, dec 1
+five, dec 5
+end 100
