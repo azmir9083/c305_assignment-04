@@ -1,0 +1,22 @@
+org 100
+    load j
+    store j
+    
+LoopStart, load j
+           subt three
+           skipcond 400
+           jump EndLoop
+           load j
+           output
+           add one
+           store j
+           jump LoopStart
+    
+EndLoop, halt
+    
+j, dec 100
+three, dec 3
+one, dec 1
+
+
+end 100
