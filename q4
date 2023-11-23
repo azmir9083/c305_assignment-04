@@ -1,0 +1,21 @@
+org 100
+input
+store a
+input
+store b
+loop,load a
+add multiply
+store multiply
+load b
+subt one
+store b
+skipcond 400
+jump loop
+load multiply
+output
+halt
+a, dec 0
+b, dec 0
+one, dec 1
+multiply, dec 0
+end 100
